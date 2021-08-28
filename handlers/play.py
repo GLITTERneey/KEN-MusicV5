@@ -704,7 +704,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("you are not people who requested this song !", show_alert=True)
         return
-    await cb.message.edit("🔁 **processing...**")
+    await cb.message.edit("🔁 **memproses lagu...**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -764,7 +764,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
         chat_id,
         photo="final.png",
-        caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{title[:45]}]({url})\n⏱ **Duration:** `{duration}`\n🎧 **Request by:** {r_by.mention}\n" \
+        caption=f"💡 **Track added to the playlist**\n\n🏷 **Name:** [{title[:45]}]({url})\n⏱ **Duration:** `{duration}`\n🎧 **Request by:** {r_by.mention}\n" \
                +f"\n🔢 **Track Position:** » `{position}` «",
         reply_markup=keyboard,
         )
