@@ -46,7 +46,7 @@ async def start_(client: Client, message: Message):
                         "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                         "📚 Commands", url="https://telegra.ph/VEEZ-MUSIC-GUIDE-07-27"
+                         "📚 Commands", url="https://telegra.ph/KEK-MUSIC-GUIDE-08-25"
                     ),
                     InlineKeyboardButton(
                         "💝 Donate", url=f"https://t.me/{OWNER_NAME}")
@@ -58,10 +58,10 @@ async def start_(client: Client, message: Message):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🌐 Wiki's Page", url="https://github.com/levina-lab/veezmusic/wiki/Veez-Music-Wiki's")
+                        "📌 Click to ask", url="https://t.me/Skuyykek69")
                 ],[
                     InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/levina-lab/VeezMusic"
+                        "🧪 Source Code 🧪", url="https://github.com/skuyykek69/KEK-MusicV06"
                     )
                 ]
             ]
@@ -161,6 +161,7 @@ async def help_(client: Client, message: Message):
 \n🎊 **commands for fun:**
 \n/chika - check it by yourself
 /wibu - check it by yourself
+/randomh - check it by yourself
 /asupan - check it by yourself
 /truth - check it by yourself
 /dare - check it by yourself
@@ -192,7 +193,7 @@ async def ping_pong(client: Client, message: Message):
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        "🏓 `PONG!!`\n"
+        "🏓 `SEPONG!!`\n"
         f"⚡️ `{delta_ping * 1000:.3f} ms`"
     )
 
@@ -205,6 +206,6 @@ async def get_uptime(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
         "🤖 bot status:\n\n"
-        f"• **⏱ uptime:** `{uptime}`\n"
-        f"• **start time:** `{START_TIME_ISO}`"
+        f"• **⏳uptime:** `{uptime}`\n"
+        f"• **⏱️start time:** `{START_TIME_ISO}`"
     )
