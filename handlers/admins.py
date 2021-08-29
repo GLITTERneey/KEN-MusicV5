@@ -17,7 +17,6 @@ from callsmusic.queues import queues
 from config import LOG_CHANNEL, OWNER_ID, BOT_USERNAME, COMMAND_PREFIXES
 from helpers.database import db, dcmdb, Database
 from helpers.dbtools import handle_user_status, delcmd_is_on, delcmd_on, delcmd_off
-from helpers.helper_functions.string_handling import extract_time
 
 
 @Client.on_message()
