@@ -79,13 +79,13 @@ The easy way to host this bot, deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/skuyykek69/KEK-Music)
 
 ## Railway Deployment 🚄
-For deployment on railway you can see the full of [Necessary Variables Here](https://github.com/levina-lab/VeezMusic/blob/main/example.env), make sure you fill all of it.
+For deployment on railway you can see the full of [Necessary Variables Here](https://github.com/skuyykek69/KEK-MusicV06/blob/main/example.env), make sure you fill all of it.
 
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/skuyykek69/KEK-Music&envs=SESSION_NAME,BOT_TOKEN,BOT_USERNAME,BOT_NAME,GROUP_SUPPORT,ASSISTANT_NAME,OWNER_NAME,BG_IMAGE,UPDATES_CHANNEL,API_ID,API_HASH,PMPERMIT,SUDO_USERS,DURATION_LIMIT,THUMB_IMG)
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/skuyykek69/KEK-MusicV06&envs=SESSION_NAME,BOT_TOKEN,BOT_USERNAME,BOT_NAME,GROUP_SUPPORT,ASSISTANT_NAME,OWNER_NAME,BG_IMAGE,UPDATES_CHANNEL,API_ID,API_HASH,PMPERMIT,SUDO_USERS,DURATION_LIMIT,THUMB_IMG)
 
 ### Special Credits 💖
 - [Kek](https://github.com/skuyykek69): Dev
-- [Kyy](https://github.com/Rifkiarisman): Dev
+- [Okek](https://github.com/KEK-Projects): Dev
 - [4Brother](https://t.me/fourBrothersgroup) Support
 
 ### Support & Updates 🎑
