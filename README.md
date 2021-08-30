@@ -81,9 +81,9 @@ The easy way to host this bot, deploy to Heroku
 ## Railway Deployment 🚄
 For deployment on railway you can see the full of [Necessary Variables Here](https://github.com/skuyykek69/KEK-MusicV06/blob/main/example.env), make sure you fill all of it.
 
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/skuyykek69/KEK-MusicV06&envs=SESSION_NAME,BOT_TOKEN,BOT_USERNAME,BOT_NAME,GROUP_SUPPORT,ASSISTANT_NAME,OWNER_NAME,BG_IMAGE,UPDATES_CHANNEL,API_ID,API_HASH,PMPERMIT,SUDO_USERS,DURATION_LIMIT,THUMB_IMG)
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app?referralCode=tFn_Sj/new/template?template=https://github.com/skuyykek69/KEK-MusicV06&envs=SESSION_NAME,BOT_TOKEN,BOT_USERNAME,BOT_NAME,GROUP_SUPPORT,ASSISTANT_NAME,OWNER_NAME,BG_IMAGE,UPDATES_CHANNEL,API_ID,API_HASH,PMPERMIT,SUDO_USERS,DURATION_LIMIT,THUMB_IMG)
 
-### Special Credits 💖
+### Special Credits ✨
 - [Kek](https://github.com/skuyykek69): Dev
 - [Okek](https://github.com/KEK-Projects): Dev
 - [4Brother](https://t.me/fourBrothersgroup) Support
