@@ -1,6 +1,4 @@
 pyrogram
-python-arq
-TgCrypto
 tgcrypto
 py-tgcalls==0.7.4
 python-dotenv
