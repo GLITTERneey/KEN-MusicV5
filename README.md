@@ -1,4 +1,4 @@
-<h2 align="centre">🎶 KEK MUSIC BOT</h2>
+<h2 align="centre">🎶 KEN MUSIC BOT</h2>
 
 ### KEK Music is a telegram bot project that's allow you to play music on telegram voice chat group.
 
@@ -76,7 +76,7 @@
 ## Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/skuyykek69/KEK-Music)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GLITTERneey/KEN-MusicV5)
 
 ## Railway Deployment 🚄
 For deployment on railway you can see the full of [Necessary Variables Here](https://github.com/skuyykek69/KEK-MusicV06/blob/main/example.env), make sure you fill all of it.
