@@ -49,19 +49,19 @@ async def start_(client: Client, message: Message):
                          "📚 Commands", url="https://telegra.ph/KEK-MUSIC-GUIDE-08-25"
                     ),
                     InlineKeyboardButton(
-                        "💝 Donate", url=f"https://t.me/{OWNER_NAME}")
+                        "💝 Donate", url=f"https://t.me/Biarenakliatnyaaa")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 Official Group", url=f"https://t.me/Jarak_Virtual"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "📣 Official Channel", url=f"https://t.me/storeglitter")
                 ],[
                     InlineKeyboardButton(
-                        "📌 Click to ask", url="https://t.me/Skuyykek69")
+                        "📌 Click to ask", url="https://t.me/Biarenakliatnyaaa")
                 ],[
                     InlineKeyboardButton(
-                        "🧪 Source Code 🧪", url="https://github.com/skuyykek69/KEK-MusicV06"
+                        "🧪 Source Code 🧪", url="https://t.me/Virtuallnihboss"
                     )
                 ]
             ]
@@ -81,10 +81,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ Group", url=f"https://t.me/Jarak_Virtual"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 Channel", url=f"https://t.me/storeglitter"
                     )
                 ]
             ]
@@ -171,15 +171,15 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨ GROUP", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨ GROUP", url=f"https://t.me/Jarak_Virtual"
                     ),
                     InlineKeyboardButton(
-                        "📣 CHANNEL", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 CHANNEL", url=f"https://t.me/storeglitter"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 DEVELOPER", url=f"https://t.me/{OWNER_NAME}"
+                        "👩🏻‍💻 DEVELOPER", url=f"https://t.me/Biarenakliatnyaaa"
                     )
                 ]
             ]
