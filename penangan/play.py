@@ -215,18 +215,18 @@ async def hfmm(_, message):
             return
         DISABLED_GROUPS.remove(message.chat.id)
         await lel.edit(
-            f"✅ **music player has been activated in this chat.**\n\n💬 {message.chat.id}"
+            f"✅ **pemutar musik telah diaktifkan di obrolan ini.**\n\n💬 {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await message.reply("`processing...`")
         
         if message.chat.id in DISABLED_GROUPS:
-            await lel.edit("**music player already deactivated.**")
+            await lel.edit("**pemutar musik sudah dinonaktifkan.**")
             return
         DISABLED_GROUPS.append(message.chat.id)
         await lel.edit(
-            f"✅ **music player has been deactivated in this chat.**\n\n💬 {message.chat.id}"
+            f"✅ **pemutar musik telah dinonaktifkan di obrolan ini.**\n\n💬 {message.chat.id}"
         )
     else:
         await message.reply_text(
@@ -291,7 +291,7 @@ async def m_cb(b, cb):
                 ) or (
                     callsmusic.pytgcalls.active_calls[chet_id] == "paused"
                 ):
-            await cb.answer("assistant is not connected to voice chat!", show_alert=True)
+            await cb.answer("asisten tidak terhubung ke obrolan suara!", show_alert=True)
         else:
             callsmusic.pytgcalls.pause_stream(chet_id)
             
@@ -339,7 +339,7 @@ async def m_cb(b, cb):
             ) or (
                 callsmusic.pytgcalls.active_calls[chet_id] == "playing"
             ):
-                await cb.answer("voice chat is not connected or already playing", show_alert=True)
+                await cb.answer("obrolan suara tidak terhubung atau sudah diputar", show_alert=True)
         else:
             callsmusic.pytgcalls.resume_stream(chet_id)
             await cb.answer("music resumed!")
@@ -350,7 +350,7 @@ async def m_cb(b, cb):
                 ) or (
                     callsmusic.pytgcalls.active_calls[chet_id] == "paused"
                 ):
-            await cb.answer("voice chat is not connected or already paused", show_alert=True)
+            await cb.answer("obrolan suara tidak terhubung atau sudah dijeda", show_alert=True)
         else:
             callsmusic.pytgcalls.pause_stream(chet_id)
             
@@ -387,7 +387,7 @@ async def m_cb(b, cb):
         if qeue:
             qeue.pop(0)
         if chet_id not in callsmusic.pytgcalls.active_calls:
-            await cb.answer("assistant is not connected to voice chat!", show_alert=True)
+            await cb.answer("asisten tidak terhubung ke obrolan suara!", show_alert=True)
         else:
             callsmusic.queues.task_done(chet_id)
 
@@ -415,7 +415,7 @@ async def m_cb(b, cb):
             callsmusic.pytgcalls.leave_group_call(chet_id)
             await cb.message.edit("⏹ **music stopped!**")
         else:
-            await cb.answer("assistant is not connected to voice chat!", show_alert=True)
+            await cb.answer("asisten tidak terhubung ke obrolan suara!", show_alert=True)
 
 
 @Client.on_message(command("play") & other_filters)
@@ -448,16 +448,16 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>make me as admin first.</b>",
+                        "<b>jadikan saya admin dulu.</b>",
                     )
                     return
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music on voice chat"
+                        message.chat.id, "🤖: saya bergabung ke grup ini untuk memutar musik di obrolan suara"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>helper userbot bergabung dengan obrolan Anda</b>",
                     )
                 except UserAlreadyParticipant:
                     pass
@@ -472,7 +472,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} was banned in this group, ask admin to unban @{ASSISTANT_NAME} manually.</i>"
+            f"<i>{user.first_name} diban di grup ini, minta admin unban @{ASSISTANT_NAME} manually.</i>"
         )
         return
     text_links=None
@@ -547,7 +547,7 @@ async def play(_, message: Message):
             views = results[0]["views"]
         except Exception as e:
             await lel.edit(
-                "😕 **Sorry, we couldn't find your requested song**\n• Check that the name is correct or try by searching in inline mode."
+                "😕 **Maaf, kami tidak dapat menemukan lagu yang Anda minta**\n• Periksa apakah namanya benar atau coba dengan mencari dalam mode sebaris."
             )
             print(str(e))
             return
@@ -579,7 +579,7 @@ async def play(_, message: Message):
           await lel.edit("**please give a song name you want to play !**")
         # veez project
         try:
-            toxxt = "⚡ __choose a song to play:__\n\n"
+            toxxt = "⚡ __pilih lagu untuk dimainkan:__\n\n"
             j = 0
             useer=user_name
             emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣"]
@@ -822,17 +822,17 @@ async def ytplay(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>❗ promote me as admin first for using me</b>",
+                        "<b>❗ promosikan saya sebagai admin terlebih dahulu untuk menggunakan saya</b>",
                     )
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "🤖: i'm joined to this group for playing music in voice chat"
+                        message.chat.id, "🤖: saya bergabung ke grup ini untuk memutar musik di obrolan suara"
                     )
                     await lel.edit(
-                        "<b>💡 helper userbot succesfully joined your chat</b>",
+                        "<b>💡 helper userbot berhasil bergabung dengan obrolan Anda</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -848,7 +848,7 @@ async def ytplay(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} was banned in this group, ask admin to unban @{ASSISTANT_NAME} manually.</i>"
+            f"<i>{user.first_name} diban di grup ini, minta admin unban @{ASSISTANT_NAME} manually.</i>"
         )
         return
     await lel.edit("🔎 **finding song...**")
@@ -890,7 +890,7 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="cls"),
             ],[
                 InlineKeyboardButton("📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/storeglitter"),
-                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{Jarak_Virtual")
+                InlineKeyboardButton("✨ ɢʀᴏᴜᴘ", url=f"https://t.me/Jarak_Virtual")
             ],
         ]
     )
